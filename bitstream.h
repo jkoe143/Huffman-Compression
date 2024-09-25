@@ -1,31 +1,3 @@
-/*
- * File: bitstream.h
- * -----------------
- * This file defines the ibitstream and obitstream classes which are basically
- * same as the ordinary istream and ostream classes, but add the
- * functionality to read and write one bit at a time.
- *
- * The idea is that you can substitute an ibitstream in place of an
- * istream and use the same operations (get, fail, >>, etc.)
- * along with added member functions of readBit, rewind, and size.
- *
- * Similarly, the obitstream can be used in place of ofstream, and has
- * same operations (put, fail, <<, etc.) along with additional
- * member functions writeBit and size.
- *
- * There are two subclasses of ibitstream: ifbitstream and istringbitstream,
- * which are similar to the ifstream and istringstream classes.  The
- * obitstream class similarly has ofbitstream and ostringbitstream as
- * subclasses.
- *
- * @author Keith Schwarz, Eric Roberts, Marty Stepp
- * @version 2019/04/20
- * - added toPrintable(string)
- * @version 2018/09/25
- * - added doc comments for new documentation generation
- * @version 2016/11/12
- * - made toPrintable non-static and visible
- */
 #ifndef _bitstream_h
 #define _bitstream_h
 

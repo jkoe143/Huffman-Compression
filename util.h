@@ -1,8 +1,3 @@
-//
-// STARTER CODE: util.h
-//
-// TODO:  Write your own header and fill in all functions below.
-//
 #include <iostream>
 #include <fstream>
 #include <map>
